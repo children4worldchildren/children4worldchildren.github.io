@@ -1,4 +1,94 @@
-<footer></footer>
+<div class="container-fluid g-0">
+  <div class="row">
+    <div class="col">
+      <footer>
+        <div class="container">
+          <div class="footer-contact-details">
+            <div class="row">
+              <div class="col-2">
+                <div class="footer-contact-details-logo">
+                  <img src="{{ 'assets/img/logos/children-4-world-children.png' | relative_url }}" class="img-fluid" alt="Children 4 Children Logo">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="footer-contact-details-address">
+                  <h6>Our Address</h6>
+                  <ul class="list-unstyled">
+                    <li>{{ site.title }}</li>
+                    <li>The Base Enterprise Centre</li>
+                    <li>Michael Galvin Building</li>
+                    <li>Damastown Road, Mulhuddart</li>
+                    <li>Dublin 15</li>
+                    <li>Ireland</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="footer-contact-details-policies">
+                  <h6>Our Policies</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#"><i class="bi bi-box-arrow-up-right"></i>Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-box-arrow-up-right"></i>Cookie Policy</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-box-arrow-up-right"></i>Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="footer-contact-details-hours">
+                  <h6>Get In Touch</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="bi bi-envelope-fill"></i>
+                      <span>Email: </span>
+                      <a href="mailto:hello@children4worldchildren.com">hello@children4worldchildren.com</a>
+                    </li>
+                    <li>
+                      <i class="bi bi-telephone-fill"></i>
+                      <span>Phone: </span>
+                      <a href="tel:+353899859326">+353 89 9859 326</a>
+                    </li>
+                    <li>
+                      <i class="bi bi-clock-fill"></i>
+                      <span>Hours: </span>
+                      <span>Mon-Fri 9:00AM-5:00PM</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright-details">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <p>
+                  <small>{{ site.time | date: '%Y' }} &copy; {{ site.title }}. All rights reserved.</small>
+                </p>
+              </div>
+              <div class="col-4">
+                <ul class="list-inline">
+                  {% for item in site.data.social %}
+                  <li class="list-inline-item">
+                    <a href="{{ item.url }}" target="_blank">
+                      <i class="bi bi-{{ item.icon }}"></i>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
 <script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
 </body>
 
