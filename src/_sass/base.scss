@@ -16,3 +16,86 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+//test
+/*
+.red {
+    background-color: $colour-background-red;
+}
+*/
+
+//styles class used in get-involved page
+
+.hrcolor {
+    color: $horizontal-line-color;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-color: $card-border-color;
+}
+
+.card img {
+    width: 20%;
+    height: 30%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-purple {
+    background-color: rgb(157, 101, 157);
+    border-color: rgb(193, 108, 193);
+    color: white;
+    margin: auto;
+    display: block;
+    //width: 50%;
+    width: auto;
+}
+
+.btn-purple:hover {
+    background-color: rgb(237, 151, 237);
+    border-color: darkpurple;
+}
+
+.p {
+    text-align: center;
+}
+
+//there is a image for whole body ,need to figure it out how it should work along
+/*
+.body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/image/donate.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+*/
