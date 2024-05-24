@@ -2,7 +2,7 @@
 title: Get Involved with Children 4 World Children
 ---
 
-<main class="page-get-involved">
+<!--main class="page-get-involved">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -17,4 +17,84 @@ title: Get Involved with Children 4 World Children
                 </ul>
             </div>
         </div>
-</main>
+</main-->
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link href="{{ 'assets/css/styles.css' | relative_url }}" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Contribute Page</h1>
+                <div>
+                    <img src="/image/header_getinvolved.png" height="80px" width="80px"
+                        alt="Header Image of Contribution Page">
+                </div>
+                <div>
+                    <p>CHILDREN FOR WORLD CHILDREN</p>
+                </div>
+                <p>Get Involved Page Content</p>
+                <hr class="hrcolor">
+                <div>
+                    <h2 class="h2">How You Can Help Us</h2><br />
+                </div>
+                <div>
+                    <p class="p">
+                        Lorem ipsum dolor sit amet, te has solet postea. Voluptua quaestio dissentias has ex, no eum
+                        aliquid tibique petentium,
+                        agam mucius
+                        <br>
+                        no eum aliquid tibique petentium,
+                        agam mucius
+                    </p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/image/donate.png" alt="donate image">
+                        <div class="card-content">
+                            <h3>Donate</h3>
+                            <p>Lorem ipsum dolor sit amet<br />consectur</p>
+                            <button type="button" class="btn btn-purple">Donate</button><br>
+                            <a href="#donate.html" type="button" class="btn btn-purple">Donate</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/image/volunteer.png" alt="volunteer image">
+                        <div class="card-content">
+                            <h3>Volunteer</h3>
+                            <p>Lorem ipsum dolor sit amet<br />consectur</p>
+                            <button type="button" class="btn btn-purple">Donate</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/image/fundraiser.png" alt="fundraiser image">
+                        <div class="card-content">
+                            <h3>Fundraising</h3>
+                            <p>Lorem ipsum dolor sit amet consectur<br />consectur</p>
+                            <button type="button" class="btn btn-purple">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    {% for way in site.get-involved %}
+                    <li>
+                        <a href="{{ way.url }}">{{ way.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
