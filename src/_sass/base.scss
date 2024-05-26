@@ -39,3 +39,43 @@ footer {
         margin: 3rem 0 0;
     }
 }
+
+//used in about-us page
+.page-about-us {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .introduce-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .text, .image {
+        flex: 1;
+    }
+
+    .value-section {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .value-item {
+        background: #f4f4f4;  // light grey background
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+}
+
+
+
