@@ -16,3 +16,30 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+footer {
+    background-color: $colour-background-purple;
+    color: $colour-background-white;
+    padding: 4rem 0 1rem;
+
+    a {
+        color: $colour-background-white;
+    }
+
+    h6 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    i.bi {
+        padding: 0 5px 0 0;
+    }
+
+    .footer-copyright-details {
+        margin: 3rem 0 0;
+    }
+}
+.custom-btn {
+    background-color: $colour-background-purple;
+        color: $colour-text-white;
+}
