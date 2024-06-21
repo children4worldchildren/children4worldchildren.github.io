@@ -33,6 +33,10 @@ main {
     align-items: center;
     margin: 50px;
 
+    .title {
+        font-size: 70px;
+    }
+
     .card {
         display: flex;
         flex-direction: row;
