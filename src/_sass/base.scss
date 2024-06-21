@@ -16,3 +16,42 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+//////////////Styles for Events page by Shane////////////////////
+
+main {
+    background-image: $background-img;
+}
+
+.events {
+    margin-bottom: 100px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 5px black solid;
+        margin: 10px;
+        word-wrap: break-word;
+        width: 780px;
+        height: 289px;
+
+        img {
+            height: 200px;
+            width: 200px;
+            margin: 40px;
+        }
+
+        a {
+            width: 470px;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////
