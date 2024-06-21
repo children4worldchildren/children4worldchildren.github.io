@@ -3,18 +3,33 @@ title: Our Events - Children 4 World Children
 ---
 
 <main class="page-our-events">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Our Events Page Title</h1>
-                <p>Our Events Page Content</p>
-                <ul>
-                    {% for event in site.event %}
-                        <li>
-                            <a href="{{ event.url }}">{{ event.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
+  <div class="container">
+    <div class="row events">
+      <div class="col">
+        <h1 class="title">Events</h1>
+        <p>Our Events Page Content</p>
+        {% for event in site.event %}
+        <div class="card">
+          <img
+            src="{{ 'assets/img/logos/children-4-world-children.png' | relative_url }}"
+            alt=""
+          />
+          <div class="info">
+            <span class="date">20 APRIL, 2024</span>
+            <h4>{{event.title}}</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. A leo ultricies dui faucibus netus viverra ultrices urna.</p>
+            <a href="{{ event.url }}" ><button class="btn btn-primary"><span>View more</span></button></a>
+          </div>
         </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h1>Title</h1>
+        <p>Lorem ipsum</p>
+        <button>Donate us</button>
+      </div>
+    </div>
+  </div>
 </main>

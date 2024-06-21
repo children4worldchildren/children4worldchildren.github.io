@@ -16,3 +16,76 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+//////////////Styles for Events page by Shane////////////////////
+
+main {
+    background-image: $background-img;
+}
+
+.events {
+    margin-bottom: 100px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+    .title {
+        font-size: 70px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border:  1px solid $light-purple;
+        margin: 10px;
+        word-wrap: break-word;
+        width: 858px;
+        height: 289px;
+
+        img {
+            height: 200px;
+            width: 200px;
+            margin: 40px;
+        }
+
+        .info {
+
+            .date {
+                color: $dark-purple;
+                font-weight: 900;
+                font-size: 14px;
+                letter-spacing: 3px;
+            }
+
+            h4 {
+                font-weight: bold;
+            }
+
+            p {
+                margin-bottom: 25px;
+                font-weight: bold;
+            }
+
+            button {
+                // width: 470px;
+                background: linear-gradient(311deg, $dark-purple 0%, $less-light-purple 40%, $light-purple 100%);
+                border: $light-purple;
+                border-radius: 8px;
+                box-shadow: 0 0px 10px 0px $light-purple-less-opacity;
+                padding: 7px;
+                padding-top: 4px;
+
+                span {
+                    border: 8px solid $no-opcaity-color;
+                    font-size: 11.5px;
+                }
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////
