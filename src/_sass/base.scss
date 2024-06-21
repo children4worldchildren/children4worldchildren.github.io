@@ -49,18 +49,30 @@ main {
             margin: 40px;
         }
 
-        button {
-            // width: 470px;
-            background: linear-gradient(311deg, rgba(130, 78, 152, 1) 0%, rgba(148, 97, 169, 1) 40%, rgba(160, 110, 181, 1) 100%);
-            border: rgba(160, 110, 181, 1);
-            border-radius: 8px;
-            box-shadow: 0 0px 10px 0px rgba(160, 110, 181, 0.8);
-            padding: 7px;
-            padding-top: 4px;
+        .info {
 
-            span {
-                border: 8px solid rgba(0, 0, 0, 0);
-                font-size: 11.5px;
+            .date {
+                color: $dark-purple;
+                font-weight: bold;
+            }
+
+            p {
+                margin-bottom: 25px;
+            }
+
+            button {
+                // width: 470px;
+                background: linear-gradient(311deg, $dark-purple 0%, $less-light-purple 40%, $light-purple 100%);
+                border: $light-purple;
+                border-radius: 8px;
+                box-shadow: 0 0px 10px 0px $light-purple-less-opacity;
+                padding: 7px;
+                padding-top: 4px;
+
+                span {
+                    border: 8px solid $no-opcaity-color;
+                    font-size: 11.5px;
+                }
             }
         }
     }
