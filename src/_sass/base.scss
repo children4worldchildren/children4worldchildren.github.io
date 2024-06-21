@@ -37,10 +37,10 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
-        border: 5px black solid;
+        border:  1px solid $light-purple;
         margin: 10px;
         word-wrap: break-word;
-        width: 780px;
+        width: 858px;
         height: 289px;
 
         img {
@@ -53,11 +53,18 @@ main {
 
             .date {
                 color: $dark-purple;
+                font-weight: 900;
+                font-size: 14px;
+                letter-spacing: 3px;
+            }
+
+            h4 {
                 font-weight: bold;
             }
 
             p {
                 margin-bottom: 25px;
+                font-weight: bold;
             }
 
             button {
